@@ -1,0 +1,112 @@
+<?php
+    require_once 'includes/config_session.inc.php';
+    require_once 'includes/signup_view.inc.php';
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portal do Professor</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Valentina Fischer Martins Pacheco">
+        <meta name="description" content="Um site de jogo interativo onde o usuário aprenderá os passos iniciais da matemática através de jogos simples. Seu progresso será acompanhado pelo professor. Página do Portal do Professor">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" type="image/jpeg" href="imagens/icone.png">
+    </head>
+
+    <body>
+        <div class="inicio-portal">
+            <nav class="navPortal">
+                <div class="leftHeader-portal">
+                    <a href="index.html"><img src="imagens/icone.png" alt="Logo do CODIMATH, que são dois X, um azul de fundo e um branco na frente"></a>
+                    <a href="index.html" style="font-family:'kadwa'; color: #CBE3FF; margin-left: 0.5vw; font-size: 3.5vh; font-weight: bold;">CODIMATH</a>
+                </div>
+                <div class="direitaHeaderPortal">
+                    <a href="index.html">Home</a>
+                    <a href="">Contato</a>
+                </div>
+            </nav>
+
+            <section class="portal">
+                <p class="Portal-Prof">Portal do Professor</p>
+                <?php 
+                   echo "<p class='sn'>Olá professor(a) </p>";
+                ?>
+                
+            </section>
+            <hr class="hrPortal">
+
+            <section class="acessarTurmas">
+                <div class="quadroAcessar">
+                    <p class="vamos">Vamos estudar matemática!</p>
+                    <p class="customize">Customize suas turmas e acompanhe o progresso dos alunos</p>
+                    <button class="acessar">Acessar turmas</button>
+                </div>
+                <div class="imgPortal">
+                    <div class="img1"><img class="img2" src="imagens/gatoComputador.png" alt="imagem de um gatinho branco com chapéu de professor em um computador com um fundo azul"></div>
+                    
+                </div>
+            </section>
+
+            <section class="fundoEscuro">
+                <p class="conteudosAd">Conteúdos adicionais</p>
+                <div class="containerCate">
+                    <section class="cate">
+                        <div class="imprimir">
+                            <p>Atividades impressas</p>
+                            <img src="imagens/impresso.png">
+                        </div>
+                        <div class="planos">
+                            <p>Planos de aula</p>
+                            <img src="imagens/planos.png">
+                        </div>
+                    </section>
+                </div>
+
+                <p class="conheca">Conheça nossa</p>
+                <p class="comunidade">COMUNIDADE</p>
+
+
+                <section class="comu">
+                    <div class="com">
+                        <div class="users">
+                            <p class="num">198</p>
+                            <p>Usuários</p>
+                        </div>
+                        <div class="profs">
+                            <p class="num">99</p>
+                            <p>Professores</p>
+                        </div>
+                        <div class="alunos">
+                            <p class="num">99</p>
+                            <p>Alunos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="imgComu">
+                        <img src="imagens/bandeira.png">
+                    </div>
+                </section>
+                
+            </section>
+
+            <section class="footer">
+                <div class="footer_esq">
+                    <img src="imagens/icone.png" alt="Logo do site">
+                </div>
+                <div class="footer_meio">
+                    <h1>CODIMATH</h1>
+                    <p>Transformando a matemática em diversão e progresso: Codimath, o seu aliado gamificado no ensino fundamental 1!</p>
+                </div>
+                <div class="footer_dir">
+                    <h1>Nos contate</h1>
+                    <p>codimath</p>
+                    <p>ocodimath@gmail.com</p>
+                </div>
+            </section>
+            <div class="footer2">
+                <p>© 2024 CodiMath</p>
+            </div>
+    </body>

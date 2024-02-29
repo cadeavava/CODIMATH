@@ -1,0 +1,64 @@
+<?php 
+    require_once 'includes/login_view.inc.php';
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Entrar</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Valentina Fischer Martins Pacheco">
+        <meta name="description" content="Página de Login de um site de jogo interativo onde o usuário aprenderá os passos iniciais da matemática através de jogos simples. Seu progresso será acompanhado pelo professor">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" type="image/jpeg" href="imagens/icone.png">
+    </head>
+
+    <body>
+        <section class="container">
+            <div class="left-side">
+                <div class="escurecer"></div>
+                <div class="bem-vindo">
+                    <p class="bemvindo">Bem-vindo ao</p>
+                    <p class="CODIMATH">CODIMATH</p>
+                    <p class="texto1">Grursus mal suada faci lisis Lorem ipsum dolarorit ametion consectetur elit. Vesti ulum nec the dumm.</p>
+                </div>
+                <div class="catLogCad">
+                    <button>Login</button>
+                    <a href="cadastro.php"><p>Cadastro</p></a>
+                    
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="logo-escura"><img src="imagens/logo-escura.png" alt="Logo do site, que são dois X, um azul de fundo e um preto na frente"></div>
+                <form action="includes/login.inc.php" method="POST">
+                    <div class="text-box">
+                        <img src="imagens/mail.png" alt="envelope">
+                        <input type="text" name="email" id="email" class="inputUser" ></input>
+                        <label for="email" class="labelInput">Email</label>
+                    </div>
+                    <div class="text-box">
+                        <img src="imagens/cadeado.png" alt="cadeado">
+                        <input type="password" name="pwd" id="senha" class="inputUser" ></input>
+                        <label for="senha" class="labelInput">Senha</label>
+                    </div>
+
+                    <div class="botaoELembrar">
+                        <div class="botaoLogin"><button type="submit" name="submit" id="submit">Login</input></div>
+                        <div class="lembrar">
+                            <input type="checkbox" id="lembrarDeMim" name="lembrarDeMim" value="lembrarSim">
+                            <label for="lembrarSim">Lembrar de mim</label>
+                        </div>
+                    </div>
+                </form>
+                
+                <?php
+                    check_login_errors();
+                ?>
+
+               
+            </div>
+        </section>
+    </body>
